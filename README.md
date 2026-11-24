@@ -1,33 +1,36 @@
-<p align="center">
-  <img src="assets/readme/01player-banner.png" alt="零一玩家 01PLAYER 横幅" width="1200">
-</p>
+<h1 align="center">🌍 「零一玩家」地球生存攻略</h1>
 
-# 「零一玩家」地球生存攻略
-
-## **这里是「零一玩家｜01PLAYER」！**
-
-> **一个以大学生为主要群体、面向全社会开放的「AI 共创社区」！** **我们把现实生活看作一个开放的世界游戏：「地球Online：零一玩家」，每个人都是自己故事的主角！** **我们带着「玩家」的勇气与好奇心，在实践中不断探索与成长，完成自己的从零到一！**
-
-### **「不当牢玩家！不做NPC！」**
+<p align="center"><strong>让一切，从此刻发生！</strong></p>
+<p align="center">面向大学生与 AI 初学者的学习与成长 Agent Skill</p>
+<p align="center"><sub>0.3.2 &nbsp; · &nbsp; 中文优先 &nbsp; · &nbsp; 普通设备友好 &nbsp; · &nbsp; 支持零新增预算</sub></p>
 
 <p align="center">
-  <a href="#quick-start">↗ 开始使用</a> &nbsp; / &nbsp;
-  <a href="#methods">方法从哪里来</a> &nbsp; / &nbsp;
-  <a href="#pathways">选择路径</a> &nbsp; / &nbsp;
+  <a href="#quick-start">↗ 开始使用</a> &nbsp; · &nbsp;
+  <a href="#methods">方法从哪里来</a> &nbsp; · &nbsp;
+  <a href="#pathways">选择路径</a> &nbsp; · &nbsp;
   <a href="#verification">验证与边界</a>
 </p>
 
-<p align="center"><sub>0.3.2 &nbsp; · &nbsp; 中文优先 &nbsp; · &nbsp; 普通设备友好 &nbsp; · &nbsp; 支持零新增预算</sub></p>
+<p align="center">
+  <a href="https://club.01aiedu.com/">
+    <img src="assets/readme/01player-banner.png" alt="零一玩家 01PLAYER 横幅" width="1200">
+  </a>
+</p>
 
 ---
+
+这份攻略来自「零一玩家｜01PLAYER」，一个以大学生为主要群体、面向全社会开放的 AI 共创社区。我们把现实生活看作开放世界游戏「地球Online：零一玩家」。每个人都是自己故事的主角，在实践中探索与成长，完成自己的从零到一。
+
+**「不当牢玩家！不做NPC！」**
+
+> [!IMPORTANT]
+> 这份攻略是一套装在支持 Agent Skills 的 AI 助手里的 Skill。安装后，在对话里带来一段课程材料、一个待核实的结论或一个小项目，就能开始。攻略会按你的基础、时间和设备，在讲解、示范、练习和反馈中陪你推进。
 
 ## 用这份攻略做什么
 
 无论你的专业、年级或 AI 基础如何，都可以从自己关心的问题出发，练习理解新技术、解决现实问题，逐渐形成自己的判断和实践能力。
 
-从一段课程材料、一个待核实的结论或一个小项目开始，按现有基础、时间和设备推进。
-
-**这份攻略是一套安装到 AI 助手中的 Skill。** 它把思考方法、学习科学与 AI 实践融入讲解、示范、练习和反馈，也能陪你理清大学生活中的选择与行动困难。
+攻略把思考方法、学习科学与 AI 实践结合起来，也能陪你理清大学生活中的选择与行动困难。
 
 先用通俗的话和熟悉的例子讲清楚，再根据反馈逐渐加深。卡住时换例子或示范，需要时再练习、检查理解。
 
