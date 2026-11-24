@@ -1,17 +1,17 @@
 # 资料覆盖与版本记录
 
-本版：0.3.1；旧飞书快照为2026-10-22。**没有完成全库逐页、逐附件、逐外链的完整蒸馏**。本轮调整教学表达与对话节奏，沿用已登记来源，没有新增资料阅读或将旧来源的未读状态提升为已完成。
+教学资料审读版本为 0.3.1。旧飞书快照为2026-10-22。**没有完成全库逐页、逐附件、逐外链的完整蒸馏**。本轮调整教学表达与对话节奏，沿用已登记来源，没有新增资料阅读或将旧来源的未读状态提升为已完成。
 
 ## 0.3.1 对话节奏与可靠性修正
 
-- [入口](01-university-compass/SKILL.md)与[对话节奏](01-university-compass/references/dialogue.md#gentle)明确先解释眼前问题，采用日常例子与逐渐增加的支持；听不懂时换说法或示范，不默认先访谈、出题或每轮追问。
-- [AI 判断](01-university-compass/references/ai-judgment.md#workflow)补充 Agent 的入门解释与类比边界：模型调用、预设分支和循环仍可以属于固定工作流。讲解与独立检查分开，未检验不记作不会，也不凭有辅助完成认定独立掌握。模型自称查过或用过工具不构成证据，需核对实际结果与来源支持关系。
+- [入口](01player-earth-survival-guide/SKILL.md)与[对话节奏](01player-earth-survival-guide/references/dialogue.md#gentle)明确先解释眼前问题，采用日常例子与逐渐增加的支持；听不懂时换说法或示范，不默认先访谈、出题或每轮追问。
+- [AI 判断](01player-earth-survival-guide/references/ai-judgment.md#workflow)补充 Agent 的入门解释与类比边界：模型调用、预设分支和循环仍可以属于固定工作流。讲解与独立检查分开，未检验不记作不会，也不凭有辅助完成认定独立掌握。模型自称查过或用过工具不构成证据，需核对实际结果与来源支持关系。
 - 沿用 12 个安装文件、28 张卡、27 项来源、六类任务和三条完整多轮示范；新增两个单轮讲解片段不计作完整多轮示范。任务和方法的数量未因表达修订增加。
 - 修正测试器按版本选择新版情境的逻辑，增设绑定范围哈希的针对性验收入口。本轮验证范围与局限见[当前测试报告](tests/test-report.md)，历史证据独立保留。
 
 ## 0.3.0 新增范围与修正
 
-- 按需增加[AI判断与协作](01-university-compass/references/ai-judgment.md)：任务是否适合AI、人的判断、简单工具/固定流程/Agent的选择，以及依据失败、用时和费用调整或停止。接到已有T03/T04/T05，不增加新生必修长课；保留六项任务和三条多轮示范。
+- 按需增加[AI判断与协作](01player-earth-survival-guide/references/ai-judgment.md)：任务是否适合AI、人的判断、简单工具/固定流程/Agent的选择，以及依据失败、用时和费用调整或停止。接到已有T03/T04/T05，不增加新生必修长课；保留六项任务和三条多轮示范。
 - 独立检验出题与答案反馈分开；已给完整示范后另换合适任务，帮助程度与未验证能力如实记录。核查允许无错，不强造问题；教学示范同步体现这些规则。
 - 新增R25 UNESCO学生AI能力框架、R26 Anthropic工程经验、R27 Bastani等高中数学试验，研究来源共27项。实际读取章节、网页/出版日期、许可、采用位置与局限见[来源账本](research/sources.json)及三份原创阅读笔记。没有缓存新增上游全文、图表、代码或题目，没有运行上游Agent示例或重做统计。
 - 框架、工程经验与真实学生实验分别标识：不声称框架认证，不用特定高中数学的短期试验证明大学生或本Skill有效。手机/无API可做材料判断和手动流程，未运行的操作继续标记为未验证。
@@ -81,8 +81,8 @@ FUKATHON活动方案最后编辑2026-09-29，写10月11日；招募页最后编�
 - [飞书逐页清单CSV](research/feishu-inventory.csv) / [JSON](research/feishu-inventory.json)：标题、原链接、目录、作者、更新时间、主题、对象、场景、读取范围、蒸馏位置和外链。
 - [外链逐项清单CSV](research/external-inventory.csv) / [JSON](research/external-inventory.json)：296项逐项状态，全部尚未实质内容蒸馏。
 - [嵌入对象清单](research/embedded-inventory.json)：150条父页关联记录，包括18个不同工作表引用；不是150份已读资料。
-- [研究计划](research/research-plan.md) / [研究来源清单](research/sources.json) / [调用用来源表](01-university-compass/references/sources.md)。
-- [主题地图](01-university-compass/references/topic-map.md)，[原始档案说明](archive/ARCHIVE.md)。
+- [研究计划](research/research-plan.md) / [研究来源清单](research/sources.json) / [调用用来源表](01player-earth-survival-guide/references/sources.md)。
+- [主题地图](01player-earth-survival-guide/references/topic-map.md)，[原始档案说明](archive/ARCHIVE.md)。
 
 ## 未完成飞书页面
 

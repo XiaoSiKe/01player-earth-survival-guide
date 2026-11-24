@@ -214,7 +214,7 @@ class BehaviorRunnerTests(unittest.TestCase):
 
     def test_new_group_uses_metadata_version_without_relying_on_id_prefix(self):
         root = self.base / "project"
-        skill = root / "01-university-compass"
+        skill = root / "01player-earth-survival-guide"
         (skill / "references").mkdir(parents=True)
         (root / "tests").mkdir()
         (skill / "SKILL.md").write_text('---\nname: fixture\nmetadata:\n  version: "7.8.9"\n---\n')
@@ -298,7 +298,7 @@ class BehaviorRunnerTests(unittest.TestCase):
 class IntegrityCoverageTests(unittest.TestCase):
     def test_checker_rejects_incomplete_or_extra_adopted_coverage(self):
         helper = integrity.helper
-        skill = integrity.ROOT / "01-university-compass"
+        skill = integrity.ROOT / "01player-earth-survival-guide"
         skill_text, normalized_manifest = helper.read_skill(skill)
         raw_manifest = [
             {"path": str(p.relative_to(skill)), "bytes": p.stat().st_size,

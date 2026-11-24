@@ -1,13 +1,13 @@
 [
   {
     "path": "SKILL.md",
-    "bytes": 8207,
-    "sha256": "e5d3ba1e18ebe445a3d81c3e394c0564b97c97f4bc14e8597b755ff2f3d17396"
+    "bytes": 8807,
+    "sha256": "e9b7b09f6880bd2136f55a755df816535a06a3858ef84951f2574d8f6d2518f1"
   },
   {
     "path": "agents/openai.yaml",
-    "bytes": 378,
-    "sha256": "c06319902b634b1ff9f8397708d9e96be0fa174c80aba090a2436591bad31150"
+    "bytes": 401,
+    "sha256": "6917668dc9fdfaeecc6ef585b4e8c5df09e426926755fb6c85ce4a96a9adf9d1"
   },
   {
     "path": "references/01.md",

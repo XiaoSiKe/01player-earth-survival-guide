@@ -35,11 +35,11 @@ def write_json(path, value):
 
 
 def fixture(root):
-    skill = root / '01-university-compass'
+    skill = root / '01player-earth-survival-guide'
     (skill / 'agents').mkdir(parents=True)
     (skill / 'references').mkdir()
     (skill / 'SKILL.md').write_text('''---
-name: 01-university-compass
+name: 01player-earth-survival-guide
 description: A minimal Skill used only in isolated tooling tests.
 metadata:
   version: "0.3.0"
@@ -50,7 +50,7 @@ SKILL_CONTENT_SENTINEL
 ''', encoding='utf-8')
     (skill / 'agents/openai.yaml').write_text('''interface:
   short_description: "陪大学新生与 AI 初学者明确目标并通过实践逐步形成自己的判断和能力"
-  default_prompt: "使用 $01-university-compass。"
+  default_prompt: "使用 $01player-earth-survival-guide。"
 ''', encoding='utf-8')
     (skill / 'references/tasks.md').write_text('<a id="t01"></a>\n## T01：Fixture\nR01\n', encoding='utf-8')
     write_json(root / 'research/sources.json', [{'id': 'R01'}])
@@ -87,7 +87,7 @@ class PackageTests(unittest.TestCase):
         self.skill = fixture(self.root)
         self.assertEqual(validator.inspect(self.root, build=True)['status'], 'PASS')
         self.before = {name: (self.root / name).read_bytes()
-                       for name in ('skill-manifest.json', '01-university-compass.zip')}
+                       for name in ('skill-manifest.json', '01player-earth-survival-guide.zip')}
 
     def assert_originals_preserved(self):
         for name, data in self.before.items():
@@ -156,17 +156,17 @@ class PackageTests(unittest.TestCase):
             report = validator.inspect(self.root, build=True)
         self.assertEqual(report['status'], 'FAIL')
         self.assertFalse((self.root / 'skill-manifest.json').exists())
-        self.assertEqual((self.root / '01-university-compass.zip').read_bytes(), self.before['01-university-compass.zip'])
+        self.assertEqual((self.root / '01player-earth-survival-guide.zip').read_bytes(), self.before['01player-earth-survival-guide.zip'])
 
     def test_successful_rebuild_is_consistent_and_reproducible(self):
         self.change_skill()
         report = validator.inspect(self.root, build=True)
         self.assertEqual(report['status'], 'PASS')
         self.assertTrue(report['build_published'])
-        first = (self.root / '01-university-compass.zip').read_bytes()
+        first = (self.root / '01player-earth-survival-guide.zip').read_bytes()
         self.assertEqual(validator.inspect(self.root)['status'], 'PASS')
         self.assertEqual(validator.inspect(self.root, build=True)['status'], 'PASS')
-        self.assertEqual((self.root / '01-university-compass.zip').read_bytes(), first)
+        self.assertEqual((self.root / '01player-earth-survival-guide.zip').read_bytes(), first)
 
 
 class RendererTests(unittest.TestCase):
@@ -277,12 +277,12 @@ class DiscoveryTests(unittest.TestCase):
                 prompts.append(kwargs['input'])
                 answer = 'ACTUAL_FIRST_ANSWER' if len(prompts) == 1 else 'ACTUAL_SECOND_ANSWER'
                 events = [{'type': 'item.completed', 'item': {
-                    'type': 'command_execution', 'command': 'cat .agents/skills/01-university-compass/SKILL.md',
+                    'type': 'command_execution', 'command': 'cat .agents/skills/01player-earth-survival-guide/SKILL.md',
                     'exit_code': 0, 'aggregated_output': 'read only fixture'}},
                     {'type': 'item.completed', 'item': {'type': 'agent_message', 'text': answer}}]
                 return types.SimpleNamespace(stdout='\n'.join(json.dumps(item) for item in events), stderr='', returncode=0)
 
-            case = {'id': 'D04', 'title': 'multi', 'user_turns': ['使用 $01-university-compass，开始。', '继续并改变条件。']}
+            case = {'id': 'D04', 'title': 'multi', 'user_turns': ['使用 $01player-earth-survival-guide，开始。', '继续并改变条件。']}
             with mock.patch.object(discovery.subprocess, 'run', side_effect=process):
                 report = discovery.run_one(case, args, '', 'configured-test-model', [], info)
             self.assertEqual(report['status'], 'completed')

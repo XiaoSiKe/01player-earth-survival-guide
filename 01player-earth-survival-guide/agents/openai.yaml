@@ -1,0 +1,4 @@
+interface:
+  display_name: "「零一玩家」地球生存攻略"
+  short_description: "零一玩家的 AI 共创与成长攻略，陪你从真实任务出发，练习、探索并形成自己的判断"
+  default_prompt: "使用 $01player-earth-survival-guide。我想入门 AI，请根据我的需要和现有条件，帮我开始一个能学到东西的小任务，再一起判断适合的方向。"

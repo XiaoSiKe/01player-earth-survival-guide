@@ -16,7 +16,7 @@ def digest(data):
 
 
 def metadata(root):
-    skill = Path(root) / "01-university-compass"
+    skill = Path(root) / "01player-earth-survival-guide"
     text = (skill / "SKILL.md").read_text(encoding="utf-8-sig")
     if not text.startswith("---\n") or "\n---\n" not in text[4:]:
         raise ValueError("SKILL.md requires closed YAML frontmatter")

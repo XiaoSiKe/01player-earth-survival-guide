@@ -14,7 +14,7 @@ spec.loader.exec_module(helper)
 
 def check(index_path, suite_path=None, skill_path=None):
     index = helper.load_json(index_path)
-    skill_path = Path(skill_path) if skill_path is not None else ROOT/'01-university-compass'
+    skill_path = Path(skill_path) if skill_path is not None else ROOT/'01player-earth-survival-guide'
     skill_text, normalized_manifest = helper.read_skill(skill_path)
     raw_manifest = [{'path':str(p.relative_to(skill_path)),
                      'bytes':p.stat().st_size, 'sha256':helper.sha(p.read_bytes())}

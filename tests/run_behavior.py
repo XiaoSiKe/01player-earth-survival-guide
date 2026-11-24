@@ -140,7 +140,9 @@ def cases_all(files=None):
 def compose_prompt(condition, skill_text, history, current):
     parts = [HARNESS]
     if condition == "skill":
-        parts.append("请依照下面显式提供的零一大学指南针 Skill 指导当前对话。文件都已展开，无需再读取。\n" + skill_text)
+        # Keep the original prompt wording for historical evidence replay.
+        title = "「零一玩家」地球生存攻略" if "\nname: 01player-earth-survival-guide\n" in skill_text else "零一大学指南针"
+        parts.append(f"请依照下面显式提供的{title} Skill 指导当前对话。文件都已展开，无需再读取。\n" + skill_text)
     # The baseline gets the same user messages, history encoding and tool limits.
     parts.append("<conversation_history>\n" + json.dumps(history, ensure_ascii=False) + "\n</conversation_history>")
     parts.append("<current_student_message>\n" + current + "\n</current_student_message>")
@@ -307,7 +309,7 @@ def main():
     parser.add_argument("--output", type=Path, help="New run directory; defaults to a unique directory for the current version")
     parser.add_argument("--case-file", action="append", type=Path, help="Explicit case JSON file; repeat to combine historical sets")
     parser.add_argument("--baseline-id", action="append", help="Override comparison case IDs; repeat as needed")
-    parser.add_argument("--skill", type=Path, default=ROOT / "01-university-compass")
+    parser.add_argument("--skill", type=Path, default=ROOT / "01player-earth-survival-guide")
     parser.add_argument("--config-home", type=Path, default=Path(os.environ.get("CODEX_HOME", str(Path.home() / ".codex"))))
     parser.add_argument("--timeout", type=float, default=240, help="Seconds per actual model turn")
     parser.add_argument("--jobs", type=int, default=2, help="Concurrent independent cases")

@@ -23,7 +23,7 @@
 | **选择工作流并做小成果（T03；有基础者可用 T04）**：“我想用两份校园公开活动规则做一页有依据的问答。只有手机，每周两小时，不想买工具。请帮我选择够用的做法，再做一个小成果。” | 需求、最简单可行流程、需要本人核对的环节和停止条件；一页有限问答或小功能，检查有答案、无答案和冲突三类问题 | 改变一条规则，观察是否修改与复查；有人提出上 Agent 时，先解释额外需求、成本和风险，允许保留固定流程；无运行条件则注明尚未运行 |
 | **判断下一段学什么（T05/T06）**：“我不知道先把 AI 用于专业学习，还是学开发。请帮我用两项小体验比较一下，每项最多 20 分钟，不要求现在选职业。” | 同一主题下的有限体验、所获帮助、感兴趣和卡住的环节、下一段暂定选择 | 比较投入与支持是否接近，区分真实困难与想象中的替代方案；允许更正目标、停止或补一项最影响判断的体验 |
 
-参考：[AI 判断、工作流与检查](../01-university-compass/references/ai-judgment.md)、[AI 实践卡](../01-university-compass/references/ai-practice.md)、[路径与起点](../01-university-compass/references/ai-pathways.md)。模拟材料和预制输出只训练对应能力，不能记作实际工具运行、真实规则核验或真实用户试用成功。
+参考：[AI 判断、工作流与检查](../01player-earth-survival-guide/references/ai-judgment.md)、[AI 实践卡](../01player-earth-survival-guide/references/ai-practice.md)、[路径与起点](../01player-earth-survival-guide/references/ai-pathways.md)。模拟材料和预制输出只训练对应能力，不能记作实际工具运行、真实规则核验或真实用户试用成功。
 
 ## 把成果检查与撤去辅助检查分开
 
