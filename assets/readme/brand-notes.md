@@ -1,13 +1,16 @@
 # README 封面资产
 
-- `club-banner-cropped.png`：当前 README 主图，取自用户新提供的“日新社横幅.png”。源图尺寸 1672 × 941；使用系统图像工具居中裁去顶部 270 像素、底部 271 像素，成品为 1672 × 400。保留完整横向宽度与中央徽记，README 等比显示；最终素材直接从原图裁切，未重绘 Logo。
+- `01player-banner.png`：当前 README 主图，与 [XiaoSiKe GitHub 个人主页横幅](https://github.com/XiaoSiKe/XiaoSiKe/blob/main/assets/01player-banner.png) 的原图一致，尺寸 1672 × 421。
+- `club-banner-cropped.png`：README 页尾的日新社横幅，取自用户新提供的“日新社横幅.png”。源图尺寸 1672 × 941；使用系统图像工具居中裁去顶部 270 像素、底部 271 像素，成品为 1672 × 400。保留完整横向宽度与中央徽记，README 等比显示；最终素材直接从原图裁切，未重绘 Logo。
 - `club-banner.png`：上一版 README 主图，为“旗帜.png”的原始副本，尺寸 1536 × 1024，当前 README 不再引用。
 - `cover.svg`：上一版 README 使用的黑白排版封面，保留供历史视觉验证记录查阅，当前 README 不再引用。
 - `club-logo-original.jpg`：上一版封面采用的“日新社完整.jpg”原始副本，保留原像素与比例。
 
-当前主图 SHA256：`30b53d5d6265a5d07ee6cd350ea3f76fe904ebf08e0c997176d735cb68d5f6af`。
+零一玩家主图 SHA256：`829463389bee4ee0cb5e3a8c6e1eb02ecdfe42becd8e1539685edd541fdafcc5`。
 
-当前源图 SHA256：`331cbbdd69c31ee7fe7753971590f6cf048028dc04af6354cb0a4c18466f635e`。
+日新社横幅 SHA256：`30b53d5d6265a5d07ee6cd350ea3f76fe904ebf08e0c997176d735cb68d5f6af`。
+
+日新社横幅源图 SHA256：`331cbbdd69c31ee7fe7753971590f6cf048028dc04af6354cb0a4c18466f635e`。
 
 上一版旗帜 SHA256：`ccc7f61207878981e19e7d6faa119520d86847e22fd2f5e9f0d1a826a146da2a`。
 

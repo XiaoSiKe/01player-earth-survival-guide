@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/readme/club-banner-cropped.png" alt="零一 AI 日新社徽记：黑底银白 Logo 横幅。" width="1200">
+  <img src="assets/readme/01player-banner.png" alt="零一玩家 01PLAYER 横幅" width="1200">
 </p>
 
 # 「零一玩家」地球生存攻略
@@ -220,5 +220,9 @@ python3 scripts/validate_package.py --build
 </details>
 
 ---
+
+<p align="center">
+  <img src="assets/readme/club-banner-cropped.png" alt="零一 AI 日新社徽记：黑底银白 Logo 横幅。" width="1200">
+</p>
 
 <p align="center"><strong>从你真正关心的一个问题开始。</strong><br><sub>「零一玩家」地球生存攻略 · 0.3.2</sub></p>
