@@ -1,0 +1,16 @@
+{
+  "groups": [
+    {
+      "id": "reading-campus",
+      "title": "大学生活"
+    },
+    {
+      "id": "reading-ai",
+      "title": "AI 与实践"
+    },
+    {
+      "id": "reading-next",
+      "title": "下一阶段"
+    }
+  ]
+}
