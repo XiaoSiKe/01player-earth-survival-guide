@@ -25,12 +25,33 @@
 | --- | --- |
 | Skill 入口与调用说明 | `01player-earth-survival-guide/SKILL.md`、`01player-earth-survival-guide/agents/openai.yaml` |
 | 方法、任务卡、示范与资料来源 | `01player-earth-survival-guide/references/` |
+| 官网攻略文章与目录 | `articles/<分组>/<id>.md`、`articles/chapters.json` |
 | 面向使用者的介绍与安装说明 | `README.md` |
 | 校验、打包和交付脚本 | `scripts/` |
 | 测试用例、工具回归与验证记录 | `tests/` |
 | 资料登记与覆盖记录 | `research/`、`coverage-report.md` |
 
 新增研究结论或外部材料时，注明可核实的出处、采用范围和适用边界。区分来源结论、项目自己的设计及尚未验证的设想；不要把历史测试记录改写成新版本已经通过的证据。
+
+## 投稿到官网攻略
+
+修改现有文章时直接编辑 Markdown。新增文章时把 `<id>.md` 放入对应的分组目录，例如 `articles/reading-campus/first-week.md`，官网会自动收录。文件名使用小写字母、数字和短横线，在所有分组中保持唯一。文章发布后保留文件名，以便旧链接继续可用。
+
+篇名可写在 `title` 字段，也可用正文开头的一级标题。用 `order` 调整组内顺序，数值越小越靠前，留空时按文件名排在有顺序的文章后面。分组名称和顺序由 `articles/chapters.json` 管理。
+
+```markdown
+---
+title: 开学第一周
+order: 40
+author:
+university:
+uploadedAt:
+---
+
+## 正文小节
+```
+
+`uploadedAt` 使用 `YYYY-MM-DD`。未确认的作者资料或日期可以留空。PR 合并到 `main` 后，官网会定期读取已合并的内容。
 
 ## 提交前检查
 
